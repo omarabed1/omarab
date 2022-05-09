@@ -1,0 +1,38 @@
+.card-main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    margin: 25px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-areas: "img" "text" "price" ;
+    color: aliceblue;
+
+}
+
+.card-img{
+    grid-area: img;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 300px;
+    height: 200px;
+}
+.card-name{
+    grid-area: text;
+}
+.card-price{
+    grid-area: price;
+}
+.card-prc-td{
+    display: flex;
+    justify-content: center;
+
+}
